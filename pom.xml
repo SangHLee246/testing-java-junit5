@@ -5,11 +5,11 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>guru.springframework</groupId>
-    <artifactId>testing-java-junit5</artifactId>
+    <artifactId>testing-java-junit5-ci</artifactId>
     <version>1.0-SNAPSHOT</version>
 
-    <name>testing-java-junit5</name>
-    <description>Testing Java with JUnit 5</description>
+    <name>testing-java-junit5-ci</name>
+    <description>Testing Java with JUnit 5 CI</description>
 
     <organization>
         <name>Spring Framework Guru</name>
@@ -59,13 +59,11 @@
             <version>${junit-platform.version}</version>
             <scope>test</scope>
         </dependency>
-
         <dependency>
             <groupId>org.junit.jupiter</groupId>
             <artifactId>junit-jupiter-params</artifactId>
             <version>${junit-platform.version}</version>
         </dependency>
-
         <dependency>
             <groupId>org.junit.jupiter</groupId>
             <artifactId>junit-jupiter-engine</artifactId>
@@ -103,7 +101,6 @@
                     <argLine>
                         --illegal-access=permit
                     </argLine>
-                    <groups>model</groups>
                 </configuration>
             </plugin>
             <plugin>
@@ -138,8 +135,6 @@
                 <artifactId>maven-surefire-report-plugin</artifactId>
                 <version>2.22.0</version>
             </plugin>
-
         </plugins>
     </reporting>
-
 </project>
