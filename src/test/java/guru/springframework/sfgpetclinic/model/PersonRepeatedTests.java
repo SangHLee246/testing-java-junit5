@@ -7,7 +7,6 @@ public class PersonRepeatedTests implements ModelRepeatedTests {
 
     @RepeatedTest(value = 10, name = "{displayName} : {currentRepetition} - {totalRepetitions}")
     @DisplayName("My Repeated Test")
-    @Test
     void myRepeatedTest() {
         //todo - impl
     }
